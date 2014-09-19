@@ -28,12 +28,12 @@ public class UnityAgent : MonoBehaviour {
             DoLocomotion(0,0);
             return;
         }
-        /*
+
         if(Time.frameCount % 60 == 0 && Random.Range(0,100) > restPercent){
             DoLocomotion(0, 0);
             animator.SetInteger("Rest", Random.Range(1, maxState+1));
             return;
-        }*/
+        }
 
         if(animator.GetCurrentAnimatorStateInfo(0).tagHash == moveHash){
             animator.SetInteger("Rest", 0);
