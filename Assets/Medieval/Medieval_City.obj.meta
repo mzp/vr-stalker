@@ -494,6 +494,7 @@ ModelImporter:
     100976: WindowLowLODTexturing_7
     100978: WindowLowLODTexturing_8
     100980: WindowLowLODTexturing_9
+    100982: roofs_RoofSurface_15_MeshPart2
     400000: BalconyRailingSurface
     400002: BalconyRailingSurface_1
     400004: BalconyRailingSurface_2
@@ -985,6 +986,7 @@ ModelImporter:
     400976: WindowLowLODTexturing_7
     400978: WindowLowLODTexturing_8
     400980: WindowLowLODTexturing_9
+    400982: roofs_RoofSurface_15_MeshPart2
     2300000: BalconyRailingSurface
     2300002: BalconyRailingSurface_1
     2300004: BalconyRailingSurface_2
@@ -1471,6 +1473,7 @@ ModelImporter:
     2300966: WindowLowLODTexturing_7
     2300968: WindowLowLODTexturing_8
     2300970: WindowLowLODTexturing_9
+    2300972: roofs_RoofSurface_15_MeshPart2
     3300000: BalconyRailingSurface
     3300002: BalconyRailingSurface_1
     3300004: BalconyRailingSurface_2
@@ -1957,6 +1960,7 @@ ModelImporter:
     3300966: WindowLowLODTexturing_7
     3300968: WindowLowLODTexturing_8
     3300970: WindowLowLODTexturing_9
+    3300972: roofs_RoofSurface_15_MeshPart2
     4300000: BalconyRailingSurface
     4300002: BalconyRailingSurface_1
     4300004: BalconyRailingSurface_2
@@ -2443,6 +2447,7 @@ ModelImporter:
     4300966: WindowLowLODTexturing_7
     4300968: WindowLowLODTexturing_8
     4300970: WindowLowLODTexturing_9
+    4300972: roofs_RoofSurface_15_MeshPart2
     6400000: BalconyRailingSurface
     6400002: BalconyRailingSurface_1
     6400004: BalconyRailingSurface_2
@@ -2929,6 +2934,7 @@ ModelImporter:
     6400966: WindowLowLODTexturing_7
     6400968: WindowLowLODTexturing_8
     6400970: WindowLowLODTexturing_9
+    6400972: roofs_RoofSurface_15_MeshPart2
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -2954,7 +2960,7 @@ ModelImporter:
     addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1
