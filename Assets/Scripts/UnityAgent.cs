@@ -3,26 +3,41 @@ using System.Collections;
 
 public class UnityAgent : MonoBehaviour {
     public GameObject target;
+    public int restPercent = 80;
+    public int maxState = 3;
+
 	protected NavMeshAgent		agent;
 	protected Animator			animator;
 
     // 旋回速度
     public float rotateSpeed = 2.0f;
+    private int moveHash = 0;
 
 	// Use this for initialization
 	void Start () {
 		agent = GetComponent<NavMeshAgent>();
 		agent.updateRotation = false;
 		animator = GetComponent<Animator>();
+
+        this.moveHash = Animator.StringToHash("move");
 	}
 
 	protected void SetupAgentLocomotion()
 	{
-		if (AgentDone()) {
+     	if (AgentDone()) {
             DoLocomotion(0,0);
-		} else {
-			Vector3 velocity = Quaternion.Inverse(transform.rotation) * agent.desiredVelocity;
+            return;
+        }
 
+        if(Time.frameCount % 60 == 0 && Random.Range(0,100) > restPercent){
+            DoLocomotion(0, 0);
+            animator.SetInteger("Rest", Random.Range(1, maxState+1));
+            return;
+        }
+
+        if(animator.GetCurrentAnimatorStateInfo(0).tagHash == moveHash){
+            animator.SetInteger("Rest", 0);
+			Vector3 velocity = Quaternion.Inverse(transform.rotation) * agent.desiredVelocity;
             DoLocomotion(velocity.z, velocity.x);
 		}
 	}
