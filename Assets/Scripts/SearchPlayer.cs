@@ -4,7 +4,6 @@ using System.Collections;
 public class SearchPlayer : MonoBehaviour {
 	FOV2DEyes eyes;
 	FOV2DVisionCone visionCone;
-	float speed = -5;
     public int suspicious = 0;
     Animator animator;
     public TextMesh status = null;
