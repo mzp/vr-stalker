@@ -5,7 +5,7 @@ using System.Collections;
 public class GUIController : MonoBehaviour {
 
     public GUISkin customSkin = null;
-    static public bool isOculusRift = false;
+    static public bool isOculusRift = true;
     private bool isLoad = false;
 
     void OnGUI() {
